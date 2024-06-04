@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Inscreva-se</h1>
+            <div class="input-control">
+                <label for="username">Nome Completo</label>
+                <input id="username" name="username" type="text" placeholder="Digite seu nome completo">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite seu e-mail">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Senha</label>
+                <input id="password"name="password" type="password" placeholder="Digite sua senha">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirmação de senha</label>
+                <input id="password2"name="password2" type="password" placeholder="Digite novamente sua senha">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="date">Data de Nascimento</label>
+                <input id="date" name="date" type="date" min="1900-01-01" max="2200-01-01">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="genero">Selecione o gênero:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outros">Outros</option>
+                </select>
+              </div>
+            <div class="check">
+                <label for="check">Aceitar termos de uso</label>
+                <input id="check" name="check" type="checkbox">
+                <div class="error"></div>
+            </div>
+            <button id="btn" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
